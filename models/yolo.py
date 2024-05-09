@@ -48,6 +48,7 @@ from models.common import (
     GhostBottleneck,
     GhostConv,
     Proto,
+    CoordAtt,
 )
 from models.experimental import MixConv2d
 from utils.autoanchor import check_anchor_order
@@ -379,6 +380,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
             nn.ConvTranspose2d,
             DWConvTranspose2d,
             C3x,
+            CoordAtt,
         }:
             c1, c2 = ch[f], args[0]
             if c2 != no:  # if not output

@@ -6,4 +6,4 @@ val: ..\DataSet\images\val
 nc: 4
 
 # class names
-names: ['face', 'cigarette', 'phone', 'drinking']
+names: ['face', 'cigarette', 'phone', '0']
